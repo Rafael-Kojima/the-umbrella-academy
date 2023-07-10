@@ -26,6 +26,7 @@
     }
 
     .personagem-selecionado .personagem-grande{
+        margin-top: 10px;
         width: 350px;
         height: 350px;
     }
