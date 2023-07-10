@@ -1,0 +1,117 @@
+body {
+    font-family: "Oxanium", cursive;
+    background-color: hsl(0, 0%, 0%);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    background-image: url(../imagens/banner-umbrella.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw; /* Use vw em vez de % para abranger toda a largura da janela de visualização */
+    height: 100vh; /* Use vh para abranger toda a altura da janela de visualização */
+    position: fixed; /* Use position: fixed em vez de absolute */
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+.cabecalho {
+	display: flex;
+	justify-content: center;
+}
+
+.logo{
+    width: 300px;
+    height: 192px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.selecao-de-personagens {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+.selecao-de-personagens .personagens {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 585px;
+	gap: 25px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+	font-size: 20px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #2370ff;
+	width: 100%;
+	text-align: center;
+}
+.lista-de-personagens {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+  }
+  
+  .lista-de-personagens .personagem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 193px; /* Altura fixa para as células do grid */
+	width: 123px;
+    border: 2px solid black;
+  }
+  
+  .lista-de-personagens .personagem img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+
+.lista-de-personagens .personagem.selecionado {
+	box-shadow: 0px 0px 24px 5px #2370ff;
+    transform: scale(1.2);
+    transition: 0.9ms;
+}
+
+.personagem-selecionado {
+    text-align: center;
+    max-height: 530px;
+}
+
+.personagem-selecionado .personagem-grande{
+    width: 450px;
+    height: 450px;
+}
+
+.personagem-selecionado .nome-personagem{
+    border-bottom: 2px solid #2370ff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
+
+

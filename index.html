@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Umbrella Academy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/logo.jpg" alt="Logo x-men">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Escolha um Hargreeves</h1>
+        <ul class="lista-de-personagens">
+          <li class="personagem selecionado" id="luther" data-name="Luther" data-description="Luther Hargreeves, também conhecido como Número Um, é o líder da Umbrella Academy e possui uma estrutura corporal alterada que lhe confere força sobre-humana. Apesar de seu físico impressionante, ele carrega o peso da lealdade ao pai adotivo e uma busca constante por aceitação dos irmãos.">
+            <img
+              src="./src/imagens/luther.jpg"
+              alt="Personagem Ciclope"
+            />
+          </li>
+          <li class="personagem" id="diego" data-name="Diego" data-description="Diego Hargreeves, o Número Dois, é um habilidoso lutador que domina o combate corpo a corpo e é altamente preciso com facas. Apesar de sua determinação e busca por justiça, ele muitas vezes enfrenta conflitos com a autoridade, enquanto lida com suas próprias inseguranças e um desejo de provar seu valor.">
+            <img
+              src="src/imagens/diego.jpg"
+              alt="Personagem Jean Grey"
+            />
+          </li>
+
+          <li class="personagem" id="allison" data-name="Alisson" data-description="Allison Hargreeves, a Número Três, possui o poder da Rumor, que lhe permite manipular a realidade através de suas palavras. No entanto, ela lida com as consequências de seu poder e sua relação complicada com a família, buscando redenção e equilíbrio em sua vida.">
+            <img
+              src="./src/imagens/alisson.jpg"
+              alt="Personagem Lince Negra"
+            />
+          </li>
+
+          <li class="personagem" id="klaus" data-name="Klaus" data-description="Klaus Hargreeves, ou Número Quatro, tem a habilidade de se comunicar com os mortos. Ele é um espírito livre, lutando contra suas próprias lutas internas e vícios, mas também é capaz de trazer à tona mensagens importantes do além, que muitas vezes afetam o curso dos eventos.">
+            <img
+              src="./src/imagens/klaus.jpg"
+              alt="Personagem Tempestade"
+            />
+          </li>
+
+          <li class="personagem" id="cinco" data-name="Cinco" data-description="Cinco Hargreeves, o Número Cinco, é capaz de viajar no tempo e tem uma mente brilhante. Apesar de seu corpo ter ficado preso na forma de um adolescente, ele possui habilidades táticas e estratégicas avançadas, sendo um elemento crucial para a sobrevivência da família e a resolução dos mistérios que os cercam.">
+            <img
+              src="./src/imagens/cinco.jpg"
+              alt="Personagem Vampira"
+            />
+          </li>
+
+          <li class="personagem" id="ben" data-name="Ben" data-description="Ben Hargreeves, o Número Seis, é um personagem enigmático. Apesar de estar morto, sua presença espectral continua a acompanhar a família. Ben pode invocar tentáculos monstruosos de seu corpo e é lembrado com carinho pelos irmãos.">
+            <img
+              src="./src/imagens/ben.jpg"
+              alt="Personagem Wolverine"
+            />
+          </li>
+
+          <li class="personagem" id="vania" data-name="Vania" data-description="Vanya Hargreeves, ou Número Sete, é inicialmente considerada sem poderes, mas descobre ter habilidades musicais que podem desencadear forças destrutivas. Ela lida com uma infância reprimida e busca aceitação, mas também se encontra no centro de eventos catastróficos que ameaçam a todos.">
+            <img
+              src="./src/imagens/vania.jpg"
+              alt="Personagem Noturno"
+            />
+          </li>
+
+          <li class="personagem" id="hargreeves" data-name="Reginald Hargreeves" data-description="Reginald Hargreeves é o pai adotivo dos irmãos e fundador da Umbrella Academy. Ele é um homem misterioso, com métodos questionáveis, e sua morte misteriosa afeta profundamente a dinâmica da família, revelando segredos sombrios e desafios que eles precisam enfrentar juntos.">
+            <img
+              src="./src/imagens/hargreves.jpg"
+              alt="Personagem Magneto"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/luther-grande.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Luther</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Luther Hargreeves, também conhecido como Número Um, é o líder da Umbrella Academy e possui uma estrutura corporal alterada que lhe confere força sobre-humana. Apesar de seu físico impressionante, ele carrega o peso da lealdade ao pai adotivo e uma busca constante por aceitação dos irmãos.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
